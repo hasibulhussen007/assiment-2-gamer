@@ -4,7 +4,6 @@
 *{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
-
 }
 .span-primary{
     color: #FF42A5;
@@ -54,10 +53,109 @@ nav li a{
     width: 200px;
     height: 56px;
 }
+/* banner style */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+.banner{
+    background-image: url(../images/Group\ 14.png);
+    width: 901px;
+    height: 700px;
+    margin-left: 0px;
+}
+.banner-title-1{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 200px;
+}
+.banner-title-2{
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+}
+.banner-des{
+    text-align: center;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px ; 
+}
+.banner-img{
+    padding: 0px 100px 0px 200px;
+    width: 801px;
+    height: 700px;
+}
 
-
-
-
+.btn-primary{
+    border-radius: 48px;
+    border: none;
+    background:#FF42A5;
+    color: #FFF;
+    font-size: 20px;
+    padding: 21px 40px;
+    gap: 10px;
+    cursor: pointer;
+}
+.btn-go{
+    border-radius: 48px;
+    border: none;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 20px;
+    padding: 21px 40px;
+    gap: 10px;
+    cursor: pointer;
+}
+.gamer-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: end;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    width: 1920px;
+    height: 600px;
+}
+.gamer-title{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gamer-detalis{
+    padding: 200px 150px;
+}
+.gamer-pic{
+    padding: 0px 0px 0px 240px;
+}
+.gamer-des{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.gamer-purpose{
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+}
+.unleash{
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 10px;
+}
 
 /* responsive media query */
 /* mobile responsive */
@@ -74,6 +172,21 @@ nav li a{
     .logo, .nav-title{
         justify-content: center;
     }
-
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner{
+        margin-top: 100px;
+        width: 100%;
+        height: 100%; 
+    }
+    .banner-img{
+        text-align: center;
+  padding: 150px 200px;
+        /* width: auto;
+        margin-left: 0;
+        margin-right: 0; */
+    }
+    
     
 }
